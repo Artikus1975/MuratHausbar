@@ -506,7 +506,16 @@ function equipmentDisplayText(recipe){
     const name = toolNameById.get(id);
     if(!name) throw new Error(`Unbekannte Werkzeug-ID im sichtbaren Equipmenttext: ${id}`);
     return name;
-  });
+  })
+    .replace(/\bODER\b/g, 'oder')
+    .replace(/\bNUR\b/g, 'nur')
+    .replace(/\bBEI\b/g, 'bei')
+    .replace(/\bZWEITEILIGEM\b/g, 'zweiteiligem')
+    .replace(/\bSHAKER\b/g, 'Shaker')
+    .replace(/\bOPTIONAL\b/g, 'optional')
+    .replace(/\bALS\b/g, 'als')
+    .replace(/\bVARIANTEN\b/g, 'Varianten')
+    .replace(/\bORIGINALEVIDENZ\b/g, 'Originalevidenz');
 }
 
 function recipeSearchText(recipe){
