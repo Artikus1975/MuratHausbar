@@ -1,4 +1,4 @@
-# Hausbar Next v0.29
+# Hausbar Next v0.33
 
 Korrektur nach v0.18: Die Datenanreicherung bleibt erhalten, aber die sichtbaren Inventar-Filter werden wieder auf kontrollierte, nutzerfreundliche Facetten begrenzt.
 
@@ -27,13 +27,13 @@ Zwingende Runtime-Dateien:
 - `index.html`
 - `style.css`
 - `app.js`
-- `APP_RELEASE_DATENBASIS_PREVIEW_BLOCK_G_v1.00.js`
+- `APP_RELEASE_DATENBASIS_BLOCK_G_v4.20_v1.00.js`
 
-Weitere Paketartefakte werden ebenfalls mit deployt. `inventar_aktuell_142.csv` ist ein Paketartefakt, aber keine Runtime-Abhängigkeit. `data.js` ist Legacy, wird von `index.html` nicht geladen und ist kein Fallback oder Ersatz für die Release-Daten-JS. Fehlt `APP_RELEASE_DATENBASIS_PREVIEW_BLOCK_G_v1.00.js`, muss die App fail-closed abbrechen.
+Weitere Paketartefakte werden ebenfalls mit deployt. `inventar_aktuell_142.csv` ist ein Paketartefakt, aber keine Runtime-Abhängigkeit. `data.js` ist Legacy, wird von `index.html` nicht geladen und ist kein Fallback oder Ersatz für die Release-Daten-JS. Fehlt `APP_RELEASE_DATENBASIS_BLOCK_G_v4.20_v1.00.js`, muss die App fail-closed abbrechen.
 
 Testlink:
 
-https://artikus1975.github.io/HausbarNext/?v=029
+https://artikus1975.github.io/HausbarNext/?v=033
 
 ## v0.21
 

@@ -1,6 +1,6 @@
 'use strict';
 
-const APP_VERSION = 'v0.29';
+const APP_VERSION = 'v0.33';
 
 function fatalDataError(message){
   const safe = escapeHtml(message);
@@ -601,7 +601,7 @@ function openRecipe(id){
     recipeMetaTile('Glas', glass.primary?.text),
     recipeMetaTile('Alternativglas', glass.secondary?.text),
     recipeMetaTile('Eis', serving.ice),
-    recipeMetaTile('Garnitur', serving.garnish),
+    recipeMetaTile('Optionale Garnitur', serving.garnish),
     recipeMetaTile('Werkzeug', equipment)
   ].filter(Boolean).join('');
 
