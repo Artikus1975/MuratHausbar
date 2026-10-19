@@ -581,10 +581,11 @@ function ingredientMappingText(ingredient){
   return '';
 }
 
-function recipeMetaTile(label, value){
+function recipeMetaTile(label, value, quiet = false){
   const clean = String(value || '').trim();
   if(!clean) return '';
-  return `<div class="recipe-meta-tile"><span>${escapeHtml(label)}</span><strong>${escapeHtml(clean)}</strong></div>`;
+  const tileClass = quiet ? 'recipe-meta-tile recipe-meta-tile--quiet' : 'recipe-meta-tile';
+  return `<div class="${tileClass}"><span>${escapeHtml(label)}</span><strong>${escapeHtml(clean)}</strong></div>`;
 }
 
 function openRecipe(id){
@@ -601,8 +602,8 @@ function openRecipe(id){
     recipeMetaTile('Glas', glass.primary?.text),
     recipeMetaTile('Alternativglas', glass.secondary?.text),
     recipeMetaTile('Eis', serving.ice),
-    recipeMetaTile('Optionale Garnitur', serving.garnish),
-    recipeMetaTile('Werkzeug', equipment)
+    recipeMetaTile('Optionale Garnitur', serving.garnish, true),
+    recipeMetaTile('Werkzeug', equipment, true)
   ].filter(Boolean).join('');
 
   els.recipeDetailBody.innerHTML = `

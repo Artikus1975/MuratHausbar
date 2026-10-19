@@ -986,6 +986,9 @@ h1,h2,h3,
 #recipeDetailBody .recipe-meta-tile strong{
   font-weight:580 !important;
 }
+#recipeDetailBody .recipe-meta-tile--quiet strong{
+  font-weight:400 !important;
+}
 @media (max-width:420px){
   .home-title h2{font-size:3rem;}
 }
