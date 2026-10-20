@@ -1,6 +1,6 @@
 'use strict';
 
-const APP_VERSION = 'v0.34';
+const APP_VERSION = 'v0.35';
 
 function fatalDataError(message){
   const safe = escapeHtml(message);
