@@ -1077,3 +1077,5 @@ main{
   }
 }
 
+/* IPH03 v0.34: preserve approved portrait paragraph breaks. */
+#recipeDetailBody .recipe-description p { white-space: pre-line; }
